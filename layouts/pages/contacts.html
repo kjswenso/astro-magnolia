@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="mx-xl-5 px-xl-5">
+  <div class="text-center mt-5">
+    <h1 class="mb-4 display-2">{{ .Site.Params.contacts.title }}</h1>
+    <p class="lead">{{ .Site.Params.contacts.formCallToAction }}</p>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 mb-3">
+      <div class="card mx-auto p-1 p-md-4 bg-light shadow-sm">
+        <div class="card-body bg-light">
+          <p class="text-muted">No messages are sent yet. Choose a form provider and add its endpoint in <code>config/_default/languages/.en.toml</code> before enabling this form.</p>
+          <form aria-describedby="contact-placeholder" onsubmit="return false;">
+            <div class="mb-3"><label class="form-label" for="form_name">{{ .Site.Params.contacts.form.firstname }}</label><input id="form_name" class="form-control" type="text" disabled /></div>
+            <div class="mb-3"><label class="form-label" for="form_email">{{ .Site.Params.contacts.form.email }}</label><input id="form_email" class="form-control" type="email" disabled /></div>
+            <div class="mb-3"><label class="form-label" for="form_message">{{ .Site.Params.contacts.form.inquiry }}</label><textarea id="form_message" class="form-control" rows="5" disabled></textarea></div>
+            <button type="submit" class="btn btn-primary" disabled>{{ .Site.Params.contacts.form.submitBtn }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

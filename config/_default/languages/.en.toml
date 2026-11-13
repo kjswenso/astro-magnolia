@@ -1,0 +1,83 @@
+disabled = false
+languageCode = 'en-US'
+languageName = 'English'
+title = 'Katia Sommers | Author'
+copyright = '© Katia Sommers'
+contentDir = 'content/en'
+
+[params]
+  subtitle = 'Author of feel-good, low-stakes romance'
+
+  [params.homepage]
+    preTitle = 'Welcome'
+    title = 'Katia Sommers'
+    intro = 'Stories about hopeful hearts, second chances, and happily-ever-afters.'
+    mainButton = 'Explore Books'
+    mainButtonRef = '/books/'
+    secondButton = 'About Katia'
+    secondButtonRef = '/about/'
+    blogTitle = 'From the Blog'
+    blogButton = 'Read the Blog'
+
+  [params.contacts]
+    title = 'Contact'
+    formCallToAction = 'The contact form is a placeholder until a form service is selected.'
+    socialCallToAction = 'Connect with Katia online.'
+    [params.contacts.form]
+      formspreeLink = ''
+      firstname = 'First name*'
+      lastname = 'Last name*'
+      email = 'Email*'
+      phone = 'Phone (optional)'
+      inquiry = 'Message*'
+      checkbox = 'I understand this form is not yet connected.'
+      submitBtn = 'Submit (not configured)'
+
+  [params.socials]
+    enabled = false
+
+  [params.schedules]
+    enabledFooter = false
+    enabledContacts = false
+
+  [params.footer]
+    extraDescription1 = 'Stories, romance, and happily-ever-afters.'
+    extraDescription2 = ''
+    [params.footer.navigate]
+      heading = 'Navigate'
+    [params.footer.contacts]
+      enabled = false
+      heading = 'Contact'
+      address = ''
+      mail = ''
+      mail2 = ''
+      phone = ''
+
+  [params.notfound]
+    title = '404, page not found'
+
+  [params.single]
+    similarContent = 'Similar Content'
+    toc = 'Table of Contents'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 1
+  [[menus.main]]
+    name = 'Books'
+    pageRef = 'pages/books'
+    weight = 2
+  [[menus.main]]
+    name = 'About'
+    pageRef = 'pages/about'
+    weight = 3
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = 'posts'
+    weight = 4
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = 'pages/contact'
+    weight = 5
